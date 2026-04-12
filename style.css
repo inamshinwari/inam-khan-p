@@ -1,28 +1,28 @@
 :root {
-    /* Color Palette */
+   
     --bg-color: #0f172a;
-    /* Dark Blue/Black */
+  
     --surface-color: #1e293b;
     --primary-color: #22c55e;
-    /* Green Accent */
+   
     --primary-color-glow: rgba(34, 197, 94, 0.4);
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
 
-    /* Typography */
+  
     --font-main: 'Poppins', sans-serif;
 
-    /* Layout */
+  
     --nav-height: 80px;
     --container-width: 1200px;
 
-    /* Effects */
+
     --transition: all 0.3s ease;
     --glass-bg: rgba(30, 41, 59, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
 }
 
-/* Base Styles & Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -90,7 +90,7 @@ ul {
     text-shadow: 0 0 15px var(--primary-color-glow);
 }
 
-/* Animations */
+
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -143,7 +143,7 @@ ul {
     transform: translateY(0);
 }
 
-/* Buttons */
+
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -180,7 +180,6 @@ ul {
     transform: translateY(-3px);
 }
 
-/* Navbar */
 nav {
     position: fixed;
     top: 0;
@@ -257,7 +256,7 @@ nav.scrolled {
     color: var(--text-primary);
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -343,7 +342,7 @@ nav.scrolled {
     border: 4px solid var(--bg-color);
 }
 
-/* About Section */
+
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -359,7 +358,7 @@ nav.scrolled {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Skills Section */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -395,7 +394,6 @@ nav.scrolled {
     animation: float 4s ease-in-out infinite;
 }
 
-/* Individual animation delays so they don't bounce together */
 .skill-card:nth-child(even) .skill-icon {
     animation-delay: 1s;
 }
@@ -417,7 +415,6 @@ nav.scrolled {
     font-weight: 600;
 }
 
-/* Languages Section */
 .lang-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -455,7 +452,6 @@ nav.scrolled {
     color: var(--text-secondary);
 }
 
-/* Services Section */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -500,7 +496,6 @@ nav.scrolled {
     font-size: 0.95rem;
 }
 
-/* Projects Section */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -566,7 +561,6 @@ nav.scrolled {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Contact Section */
 .contact-wrapper {
     display: flex;
     gap: 3rem;
@@ -620,8 +614,6 @@ nav.scrolled {
 .contact-card a:hover {
     color: var(--primary-color);
 }
-
-/* Contact Form Styling */
 .contact-form-container {
     flex: 1;
     min-width: 300px;
@@ -676,7 +668,6 @@ nav.scrolled {
     font-size: 1.1rem;
 }
 
-/* Footer */
 footer {
     background: rgba(15, 23, 42, 0.95);
     border-top: 1px solid var(--glass-border);
@@ -712,7 +703,6 @@ footer p {
     transform: translateY(-3px);
 }
 
-/* Back to Top */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -746,7 +736,6 @@ footer p {
     transform: translateY(-5px);
 }
 
-/* Media Queries for Responsiveness */
 @media screen and (max-width: 992px) {
     .hero {
         flex-direction: column-reverse;
