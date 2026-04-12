@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Typing Animation
+   
     const typedTextElement = document.getElementById('typed-text');
     const stringsToType = [
         "Web Developer"
@@ -26,23 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!isDeleting && charIndex === currentString.length) {
             typeSpeed = delayBetweenStrings;
-            // Stop animation after typing "Web Developer"
+            
             return;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             stringIndex = (stringIndex + 1) % stringsToType.length;
-            typeSpeed = 500; // Small pause before typing next word
+            typeSpeed = 500; 
         }
 
         setTimeout(typeEffect, typeSpeed);
     }
     
-    // Start typing animation
+  
     if(typedTextElement) {
         setTimeout(typeEffect, 1000);
     }
 
-    // 2. Navbar Scroll Effect & Mobile Menu
     const navbar = document.getElementById('navbar');
     const mobileMenuBtn = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
@@ -55,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove('scrolled');
         }
         
-        // Active Link Switching
+       
         let current = '';
         const sections = document.querySelectorAll('section');
         
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -101,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Scroll Animations (Intersection Observer)
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -120,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach(el => scrollObserver.observe(el));
 
-    // 5. Back to Top Button
     const backToTopBtn = document.getElementById('back-to-top');
 
     window.addEventListener('scroll', () => {
@@ -137,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
-    // 6. Web3Forms Dynamic Form Submission
+  
     const contactForm = document.querySelector('.contact-form');
     if(contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -157,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(async (response) => {
                 if(response.status == 200) {
                     submitBtn.innerHTML = 'Message Sent Successfully! <i class="fas fa-check"></i>';
-                    submitBtn.style.backgroundColor = '#16a34a'; // tailwind green-600
+                    submitBtn.style.backgroundColor = '#16a34a'; 
                     submitBtn.style.color = '#ffffff';
                     submitBtn.style.borderColor = '#16a34a';
                     submitBtn.style.opacity = '1';
@@ -175,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => {
                 submitBtn.innerHTML = 'Error Sending <i class="fas fa-times"></i>';
-                submitBtn.style.backgroundColor = '#ef4444'; // tailwind red-500
+                submitBtn.style.backgroundColor = '#ef4444'; 
                 submitBtn.style.color = '#ffffff';
                 submitBtn.style.borderColor = '#ef4444';
                 submitBtn.style.opacity = '1';
