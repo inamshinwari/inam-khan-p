@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INAM KHAN - Web Developer, AI Enthusiast, and Automation Expert Portfolio">
+    <title>INAM KHAN | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">INAM<span>.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">INAM KHAN</span></h1>
+            <p class="subtitle">I'm a Web Developer specializing in web technologies, automation, and generative
+                AI.</p>
+            <div class="typing-container">
+                <span id="typed-text"></span><span class="cursor">&nbsp;</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">Contact Me</a>
+                <a href="#projects" class="btn secondary-btn">View Work</a>
+                <a href="certifications.html" class="btn secondary-btn" style="border-color: var(--primary-color); color: var(--primary-color);">Certifications <i class="fas fa-certificate"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="img-wrapper">
+                <img src="inam.png" alt="INAM KHAN"
+                    onerror="this.src='https://via.placeholder.com/400x400/22c55e/ffffff?text=INAM+KHAN'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding hidden">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a passionate and results-driven developer focused on building web applications,
+                    integrating AI solutions, and automating workflows. My goal is to leverage technology to create
+                    efficient, scalable, and user-centric digital
+                    experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding hidden">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                        alt="C++" class="skill-icon">
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                        alt="HTML5" class="skill-icon">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                        alt="CSS3" class="skill-icon">
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" class="skill-icon">
+                    <h3>JavaScript</h3>
+                    <span class="badge">Working</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                        alt="Python" class="skill-icon">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain skill-icon" style="color: #22c55e;"></i>
+                    <h3>Generative AI</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot skill-icon" style="color: #a855f7;"></i>
+                    <h3>Automation</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-palette skill-icon" style="color: #ec4899;"></i>
+                    <h3>Graphic Design</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired skill-icon" style="color: #00b0d8;"></i>
+                    <h3>CCNA</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-search skill-icon" style="color: #f2a60c;"></i>
+                    <h3>SEO</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages section-padding hidden">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="lang-grid">
+                <div class="lang-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>English</h3>
+                    <p>Fluent</p>
+                </div>
+                <div class="lang-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>Urdu / Hindi</h3>
+                    <p>National</p>
+                </div>
+                <div class="lang-card">
+                    <i class="fas fa-language"></i>
+                    <h3>Pashto</h3>
+                    <p>Native</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding hidden">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and highly interactive websites using modern web technologies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network Setup (CCNA)</h3>
+                    <p>Designing, configuring, and troubleshooting robust network infrastructures.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search-dollar"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Growing organic traffic through on-page SEO and technical performance tuning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding hidden">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="portfolio.png" alt="Web-Based Modern Portfolios" class="project-img-placeholder"
+                        style="object-fit: cover;">
+                    <div class="project-info">
+                        <h3>Web-Based Modern Portfolios</h3>
+                        <p>A collection of responsive, visually striking web portfolios built with modern web
+                            technologies, sleek animations, and custom UI elements.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="hospital.png" alt="Hospital Management System" class="project-img-placeholder"
+                        style="object-fit: cover;">
+                    <div class="project-info">
+                        <h3>Hospital management system</h3>
+                        <p>A comprehensive digital healthcare platform for managing patient records,
+                            appointments, and hospital administration workflows.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>Node.js</span><span>Database</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="admin.png" alt="Modern Admin Dashboard" class="project-img-placeholder"
+                        style="object-fit: cover;">
+                    <div class="project-info">
+                        <h3>Modern Admin Dashboard</h3>
+                        <p>A beautifully designed, responsive admin dashboard with data visualization, dark mode, and
+                            seamless animated transitions.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span><span>CSS3</span><span>JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding hidden">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info flex-column">
+                    <div class="contact-card" onclick="window.location.href='mailto:inamshinwari1034@gmail.com'">
+                        <svg viewBox="0 0 24 24" style="width: 2.5rem; height: 2.5rem; margin-bottom: 1rem; fill: #ea4335;">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <h3>Email</h3>
+                        <a href="mailto:inamshinwari1034@gmail.com">inamshinwari1034@gmail.com</a>
+                    </div>
+                    <div class="contact-card" onclick="window.open('https://wa.me/923130430865', '_blank')">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/923130430865" target="_blank" rel="noopener noreferrer">+92 313
+                            0430865</a>
+                    </div>
+                    <div class="contact-card"
+                        onclick="window.open('https://www.linkedin.com/in/inam-khan-878a17401/', '_blank')">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/inam-khan-878a17401/" target="_blank"
+                            rel="noopener noreferrer">Inam Khan</a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Leave a Message</h3>
+                    <!-- Using Web3Forms for 100% reliable submission even from local files -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <!-- Web3Forms access key -->
+                        <input type="hidden" name="access_key" value="b6d75ea5-b4e4-4a6f-b690-d7d84792ced8">
+                        <input type="hidden" name="subject" value="New submission from your Portfolio!">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Gmail / Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Made by INAM KHAN</p>
+            <div class="social-links">
+                <a href="mailto:inamshinwari1034@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/923130430865" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/inam-khan-878a17401/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div id="back-to-top" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

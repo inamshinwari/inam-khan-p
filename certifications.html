@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INAM KHAN - Certifications">
+    <title>INAM KHAN | Certifications</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .cert-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: top;
+            border-bottom: 1px solid var(--glass-border);
+            transition: all 0.5s ease;
+        }
+
+        .project-card:hover .cert-img {
+            object-position: bottom;
+            transform: scale(1.05);
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        /* Fullscreen Image Preview Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: auto;
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(34, 197, 94, 0.3);
+            animation: zoomIn 0.3s ease;
+        }
+
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+            color: var(--primary-color);
+            padding: 20px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: var(--text-primary);
+            font-size: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close-modal:hover,
+        .close-modal:focus {
+            color: var(--primary-color);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cert-img {
+            cursor: zoom-in;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="scrolled"
+        style="background-color: rgba(15, 23, 42, 0.95); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="nav-container">
+            <a href="index.html" class="logo">INAM<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-arrow-left"></i> Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Certifications Section -->
+    <section class="projects section-padding show" style="min-height: 100vh; padding-top: 150px;">
+        <div class="container">
+            <h2 class="section-title">My Certifications</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <img src="api.png" alt="API Penetration testing" class="cert-img">
+                    <div class="project-info">
+                        <h3>API Penetration testing</h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="api2.jpg" alt="API Penetration testing" class="cert-img">
+                    <div class="project-info">
+                        <h3>API Penetration testing</h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="criticalthinking.jpg" alt="Critical thinking in AI Era" class="cert-img">
+                    <div class="project-info">
+                        <h3>Critical thinking in AI Era</h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="psycology.jpg" alt="Mental fitness in tech space" class="cert-img">
+                    <div class="project-info">
+                        <h3>Mental fitness in tech space</h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="wordpress.jpg" alt="Build with Wordpress" class="cert-img">
+                    <div class="project-info">
+                        <h3>Build with Wordpress</h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="cybercrime.jpg" alt="Introduction to Cybercrimes" class="cert-img">
+                    <div class="project-info">
+                        <h3>Introduction to Cybercrimes</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Made by INAM KHAN</p>
+            <div class="social-links">
+                <a href="mailto:inamshinwari1034@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/923130430865" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/inam-khan-878a17401/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal for Preview -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" title="Close Preview">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const closeBtn = document.getElementsByClassName("close-modal")[0];
+
+        // Ensure cert images open the modal
+        const images = document.querySelectorAll(".cert-img");
+
+        images.forEach(img => {
+            img.onclick = function () {
+                modal.style.display = "flex";
+                modal.style.flexDirection = "column";
+                modal.style.justifyContent = "center";
+                modal.style.alignItems = "center";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+
+        // Close when clicking the X
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Close when clicking outside the image
+        modal.onclick = function (e) {
+            if (e.target !== modalImg) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
